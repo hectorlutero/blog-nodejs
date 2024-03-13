@@ -1,0 +1,39 @@
+
+
+# REGISTER USER
+POST http://localhost:3000/users/register
+Content-Type: application/json
+
+{
+    "username": "hector",
+    "email": "hector@email.com",
+    "password": "Hl@34712113"
+}
+
+###
+# LOGIN USER
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+    "email": "hector@email.com",
+    "password": "Hl@34712113"
+}
+ 
+###
+# GET USER PROFILE
+GET http://localhost:3000/users/profile
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZhMmY4OWM3OTY5NTE4ZWZhMzcwYTEiLCJlbWFpbCI6ImhlY3RvckBlbWFpbC5jb20iLCJpYXQiOjE2OTQxMTc4NDAsImV4cCI6MTY5NDEyMTQ0MH0.9DkX6AKm_3mR4AcXj6hw2ymDwvJB0C8rk_7J0DCgYrY
+
+
+###
+# UPDATE USER PROFILE
+POST http://localhost:3000/users/profile/update
+Authorization: Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VySWQiOiI2NGZhMzE3ZDJjZDFiN2QyOWYyM2U2NDYiLCJlbWFpbCI6ImhlY3RvckBlbWFpbC5jb20iLCJpYXQiOjE2OTQxMTgyNjksImV4cCI6MTY5NDEyMTg2OX0.MOerv_OQs4Vwo55QMzB4-Bnit0eikBq26B1WPrZj7Eo
+Content-Type: application/json
+
+{
+    "username": "Hector Simant",
+    "email": "hector@email.com",
+    "password": "Hl@34712113"
+}

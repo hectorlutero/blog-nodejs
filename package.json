@@ -1,0 +1,37 @@
+{
+  "dependencies": {
+    "bcrypt": "^5.1.1",
+    "bcryptjs": "^2.4.3",
+    "dotenv": "^16.3.1",
+    "express": "^4.18.2",
+    "jsonwebtoken": "^9.0.2",
+    "mongoose": "^7.4.3",
+    "nodemon": "^3.0.1",
+    "passport": "^0.6.0",
+    "passport-jwt": "^4.0.1",
+    "passport-local": "^1.0.0"
+  },
+  "name": "node-mongo-server",
+  "description": "My template for running Node.js and Mongo DB dockerized.",
+  "version": "1.0.0",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "start": "docker-compose up -d && nodemon index.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/hectorlutero/node-mongo-server.git"
+  },
+  "keywords": [
+    "node",
+    "mongo",
+    "docker"
+  ],
+  "author": "Hector Siman",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/hectorlutero/node-mongo-server/issues"
+  },
+  "homepage": "https://github.com/hectorlutero/node-mongo-server#readme"
+}
